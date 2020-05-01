@@ -1,0 +1,17 @@
+[abc]
+name='AppStream'
+description='ISO REPO FOR APPSTREAM'
+baseurl=file:///dvd/AppStream/
+gpgcheck=0
+
+[bcd]
+name='BASEOS'
+description='ISO REPO FOR BASEOS'
+baseurl=file:///dvd/BaseOS/
+gpgcheck=0
+
+[docker]
+name='DOCKERCE'
+description='ONLINE REPO FOR DOCKER-CE'
+baseurl=https://download.docker.com/linux/centos/7/x86_64/stable/
+gpgcheck=0
