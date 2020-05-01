@@ -1,4 +1,4 @@
-[######################steps for installation of jenkins######################]
+[######################steps for installation of jenkins inside rhel8######################]
 
 0. make sure your internet connectivity is in the vm and you are logged in via root account
 
