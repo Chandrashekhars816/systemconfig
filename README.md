@@ -8,7 +8,7 @@
 
 3. Make an account in the Oracle 
 
-4. Sign in the account in the oracle and save the password.
+4. Sign in the account in the oracle and logged in permanently in Oracle.
 
 5. browse the site again.
    ---> https://www.oracle.com/java/technologies/javase-jdk8-downloads.html#license-lightbox 
