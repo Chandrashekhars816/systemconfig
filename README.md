@@ -2,7 +2,7 @@
 
 0. make sure your internet connectivity is in the vm and you are logged in via root account
 
-1. open browser in the vm
+1. open browser in the windows
 
 2. browse the site--->  https://www.oracle.com/java/technologies/javase-jdk8-downloads.html#license-lightbox
 
