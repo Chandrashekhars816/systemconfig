@@ -1,4 +1,5 @@
 [######################steps for installation of jenkins######################]
+
 0. make sure your internet connectivity is in the vm and you are logged in via root account
 
 1. open browser in the vm
