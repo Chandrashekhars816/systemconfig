@@ -4,7 +4,7 @@
 
 1. cd /root/Downloads/
 
-2. git clone git@github.com:Chandrashekhars816/jenkinsinstall.git
+2. git clone https://github.com/Chandrashekhars816/jenkinsinstall.git
 
 3. chmod +x setup.sh
 
