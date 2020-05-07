@@ -2,11 +2,11 @@
 mkdir  /dvd
 mount  /dev/cdrom    /dvd
 echo "mount /dev/cdrom /dvd" >> /etc/rc.d/rc.local
-echo "export JAVA_HOME=/usr/java/jdk1.8.0_251-amd64/" >> /etc/rc.d/rc.local
-echo "export PATH=/usr/java/jdk1.8.0_251-amd64/bin/:$PATH" >> /etc/rc.d/rc.local
 chmod +x /etc/rc.d/rc.local
 cp dvd.repo /etc/yum.repos.d/dvd.repo
 dnf makecache
+systemctl restart firewalld
+setenforce 1
 dnf install docker-ce --nobest  -y
 dnf install gcc -y
 dnf install kernel-headers -y
@@ -19,15 +19,16 @@ firewall-cmd --zone=public --add-port=443/tcp --permanent
 firewall-cmd --reload
 systemctl restart docker.service
 systemctl enable  docker.service
-#sudo -H pip3.6 install jupyter
-#sudo -H pip3.6 install jupyterlab
-#sudo -H pip3.6 install numpy
-#sudo -H pip3.6 install pandas
-#sudo -H pip3.6 install tensorflow
-#sudo -H pip3.6 install folium
-#sudo -H pip3.6 install keras
-#sudo -H pip3.6 install opencv-python
+sudo -H pip3.6 install jupyter
+sudo -H pip3.6 install jupyterlab
+sudo -H pip3.6 install numpy
+sudo -H pip3.6 install pandas
+sudo -H pip3.6 install tensorflow
+sudo -H pip3.6 install folium
+sudo -H pip3.6 install keras
+sudo -H pip3.6 install opencv-python
 cp jenkins.repo /etc/yum.repos.d/jenkins.repo
+dnf install java-1.8.0-openjdk -y
 dnf install jenkins -y
 service jenkins start
 chkconfig jenkins on
