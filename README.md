@@ -2,24 +2,23 @@
 
 0. make sure your internet connectivity is in the vm and you are logged in via root account
 
-1. open browser in the windows
+1. cd /root/Downloads/
 
-2. browse the site--->  https://www.oracle.com/java/technologies/javase-jdk8-downloads.html#license-lightbox
+2. git clone git@github.com:Chandrashekhars816/jenkinsinstall.git
 
-3. Make an account in the Oracle 
+3. chmod +x setup.sh
 
-4. Sign in the account in the oracle and logged in permanently in Oracle.
+4. ./setup.sh
 
-5. browse the site again.
-   ---> https://www.oracle.com/java/technologies/javase-jdk8-downloads.html#license-lightbox 
-   ---> Download jdk-8u251-linux-x64.rpm version of the java in /root/Downloads directory.
+5. your jenkins will be installed.
 
-6. cd /root/Downloads/
 
-7. git clone git@github.com:Chandrashekhars816/jenkinsinstall.git
 
-8. chmod +x setup.sh
+#########################  Fixes done ####################################
 
-9. ./setup.sh
+for rhel 8 it will configure everything so need not to download java
 
-10. your jenkins will be installed.
+######################### Prequsite  ####################################
+
+1. iso must be attached at master slot of dvd.
+2. this is for the vm ( Rhel  8 ) only  
